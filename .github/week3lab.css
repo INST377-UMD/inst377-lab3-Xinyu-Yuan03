@@ -1,0 +1,117 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: #fce5c3;                 
+  color: #402c39;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+  line-height: 1.5;
+}
+
+
+.bar {
+  background: #402c39;    
+  color: #eecdbe;
+  text-align: center; 
+  margin: 16px;
+  padding: 18px;
+  border-radius: 8px;
+}
+.bar h1 { margin: 0; }
+
+
+.nav { margin: 0 16px 16px; }
+.nav ul {
+  list-style: none;    
+  display: flex;       
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #402c39;
+  background: #eecdbe;
+  border: 1px solid #626c88;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color .2s ease, color .2s ease;
+}
+.nav a:hover {
+  background: #402c39;
+  color: #f7b596;           
+}
+
+.row {
+  display: flex;        
+  flex-wrap: nowrap;
+  gap: 12px;
+  margin: 0 16px 16px;
+}
+
+.main {
+  flex: 0 0 70%;         
+  background: #eecdbe;
+  border: 1px solid #626c88;
+  margin: 4px;           
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.side {
+  flex: 0 0 28%;         
+  background: #eea59e;   
+  border: 1px solid #626c88;
+  margin: 4px;          
+  padding: 16px;
+  border-radius: 8px;
+  transition: background-color .2s ease;
+}
+.side:hover {
+  background: #f1af82;   
+}
+.side h3 { margin-top: 0; }
+.hint { color: #886362; }
+
+.rps-form .field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.rps-form label {
+  width: 110px;
+  font-weight: 600;
+}
+.rps-form input[type="text"],
+.rps-form select {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #8c6c7c;
+  border-radius: 6px;
+  background: #eecdbe;
+}
+
+.rps-form input[type="text"] {
+  width: 60%;
+  transition: width .2s ease;
+}
+.rps-form input[type="text"]:focus {
+  outline: 2px solid #402c39;
+  outline-offset: 2px;
+  width: 80%;           
+}
+
+.btn {
+  margin-top: 4px;
+  padding: 8px 12px;
+  background: #402c39;
+  color: #eecdbe;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color .2s ease, transform .1s ease;
+}
+.btn:hover { background: #8c6c7c; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
